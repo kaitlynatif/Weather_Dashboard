@@ -29,6 +29,13 @@
     border-color: black;
 }
 
+button.list-group-item.list-group-item-action.active {
+    width: 100%;
+    margin-top: 1em;
+    background-color: #f35fc7;
+    border-color: black;
+}
+
 hr {
     border-color: black;
 }
