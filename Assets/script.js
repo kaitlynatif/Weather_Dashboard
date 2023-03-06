@@ -28,7 +28,7 @@ var getCurrentConditions = (event) => {
         $('#search-error').text("");
         // Create icon for the current weather using Open Weather Maps
         let currentWeatherIcon="https://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
-        // Offset UTC timezone - using moment.js
+        // Offset UTC timezone - using day.js
         let currentTimeUTC = response.dt;
         let currentTimeZoneOffset = response.timezone;
         let currentTimeZoneOffsetHours = currentTimeZoneOffset / 60 / 60;
@@ -43,10 +43,10 @@ var getCurrentConditions = (event) => {
         let currentWeatherHTML = `
             <h3>${response.name} ${currentMoment.format("(MM/DD/YY)")}<img src="${currentWeatherIcon}"></h3>
             <ul class="list-unstyled">
-                <li>Temperature: ${response.main.temp}&#8457;</li>
+                <li>Temperature: ${response.main.temp}&#x2103;</li>
                 <li>Humidity: ${response.main.humidity}%</li>
                 <li>Wind Speed: ${response.wind.speed} mph</li>
-                <li id="uvIndex">UV Index:</li>
+                <li id="uvIndex">UV Index: ${response.uvIndex}</li>
             </ul>`;
         // Append the results to the DOM
         $('#current-weather').html(currentWeatherHTML);
@@ -107,7 +107,7 @@ var getFiveDayForecast = (event) => {
                     <ul class="list-unstyled p-3">
                         <li>${thisMoment.format("MM/DD/YY")}</li>
                         <li class="weather-icon"><img src="${iconURL}"></li>
-                        <li>Temp: ${dayData.main.temp}&#8457;</li>
+                        <li>Temp: ${dayData.main.temp}&#x2103;</li>
                         <br>
                         <li>Humidity: ${dayData.main.humidity}%</li>
                     </ul>

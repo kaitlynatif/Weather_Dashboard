@@ -1,6 +1,6 @@
 #header {
     color: white;
-    background: linear-gradient(#5063d1, #010214);
+    background: linear-gradient(#f35fc7, #f36811);
 }
 
 #header h1 {
@@ -25,6 +25,8 @@
 #search-button {
     width: 100%;
     margin-top: 1em;
+    background-color: #f35fc7;
+    border-color: black;
 }
 
 hr {
@@ -44,7 +46,7 @@ hr {
 
 .weather-card {
     width: 9rem;
-    background-color: #0275d8;
+    background-color: #f35fc7;
     color: white;
     text-align: center;
 }
