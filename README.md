@@ -69,7 +69,7 @@ The following image shows the web application's appearance and functionality:
 
 Below is an image of the user interface of the password generator as displayed to the user:
 
-URL to deployed game:
+URL to deployed application:
 https://kaitlynatif.github.io/Weather_Dashboard/
 
 URL to GitHub repository:
