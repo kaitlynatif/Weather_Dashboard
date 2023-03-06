@@ -52,9 +52,8 @@ THEN I am again presented with current and future conditions for that city
     2) Create a variable that will store the current date.
     3) Create a variable that will store the name of the city.
     4) Create a variable that will store the temperature.
-    5) Create a variable that will store the precipitation.
-    6) Create a variable that will store the humidity.
-    7) Create a variable that will store the wind speed.
+    5) Create a variable that will store the humidity.
+    6) Create a variable that will store the wind speed.
 * Create a function that will retrieve the weather stats for the five day forecast.
 * Create a function that will retrieve the weather stats for the search history.
 * Create a function that will retrieve the weather stats for the search bar.
@@ -89,66 +88,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-    * Uses the OpenWeather API to retrieve weather data.
-
-    * Uses `localStorage` to store persistent data.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
