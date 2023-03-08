@@ -1,14 +1,12 @@
 # 06 Server-Side APIs: Weather Dashboard
 
-## Task
+## Usage
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. This challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. The application features a search option for a specific city along with a list of cities from the search history. The weather dashboard will also feature a five day weather forecast and current weather conditions for a given city.
 
-Use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrieve weather data for cities. The base URL should look like the following: `https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`. After registering for a new API key, you may need to wait up to 2 hours for that API key to activate.
+The [5 Day Weather Forecast](https://openweathermap.org/forecast5) is used to retrieve weather data for cities.
 
-**Hint**: Using the 5 Day Weather Forecast API, you'll notice that you will need to pass in coordinates instead of just a city name. Using the OpenWeatherMap APIs, how could we retrieve geographical coordinates given a city name?
-
-You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+`localStorage` is used to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
 
 ## User Story
 
@@ -67,7 +65,7 @@ The following image shows the web application's appearance and functionality:
 
 ## Usage
 
-Below is an image of the user interface of the password generator as displayed to the user:
+Below is an image of the user interface of the weather dashboard as displayed to the user:
 
 URL to deployed application:
 https://kaitlynatif.github.io/Weather_Dashboard/

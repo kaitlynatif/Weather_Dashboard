@@ -15,7 +15,7 @@ var getCurrentConditions = (event) => {
     // Obtain city name from the search box
     let city = $('#search-city').val();
     currentCity= $('#search-city').val();
-    // Set the queryURL to fetch from API using weather search - added units=imperial to fix
+    // Set the queryURL to fetch from API using weather search - added units=metric to get Celsius
     let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&APPID=" + owmAPI;
     fetch(queryURL)
     .then(handleErrors)
@@ -28,14 +28,14 @@ var getCurrentConditions = (event) => {
         $('#search-error').text("");
         // Create icon for the current weather using Open Weather Maps
         let currentWeatherIcon="https://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
-        // Offset UTC timezone - using day.js
+        // Offset UTC timezone - using moment.js
         let currentTimeUTC = response.dt;
         let currentTimeZoneOffset = response.timezone;
         let currentTimeZoneOffsetHours = currentTimeZoneOffset / 60 / 60;
         let currentMoment = moment.unix(currentTimeUTC).utc().utcOffset(currentTimeZoneOffsetHours);
         // Render cities list
         renderCities();
-        // Obtain the 5day forecast for the searched city
+        // Obtain the five day forecast for the searched city
         getFiveDayForecast(event);
         // Set the header text to the found city name
         $('#header-text').text(response.name);
@@ -49,29 +49,6 @@ var getCurrentConditions = (event) => {
             </ul>`;
         // Append the results to the DOM
         $('#current-weather').html(currentWeatherHTML);
-        // Get the latitude and longitude for the UV search from Open Weather Maps API
-        // let latitude = response.coord.lat;
-        // let longitude = response.coord.lon;
-        // let uvQueryURL = "api.openweathermap.org/data/2.5/uvi?lat=" + latitude + "&lon=" + longitude + "&APPID=" + owmAPI;
-        // // API solution for Cross-origin resource sharing (CORS) error: https://cors-anywhere.herokuapp.com/
-        // uvQueryURL = "https://cors-anywhere.herokuapp.com/" + uvQueryURL;
-        // // Fetch the UV information and build the color display for the UV index
-        // fetch(uvQueryURL)
-        // .then(handleErrors)
-        // .then((response) => {
-        //     return response.json();
-        // })
-        // .then((response) => {
-        //     let uvIndex = response.value;
-        //     $('#uvIndex').html(`UV Index: <span id="uvVal"> ${uvIndex}</span>`);
-        //     if (uvIndex>=0 && uvIndex<3){
-        //         $('#uvVal').attr("class", "uv-favorable");
-        //     } else if (uvIndex>=3 && uvIndex<8){
-        //         $('#uvVal').attr("class", "uv-moderate");
-        //     } else if (uvIndex>=8){
-        //         $('#uvVal').attr("class", "uv-severe");
-        //     }
-        // });
     })
 }
 
