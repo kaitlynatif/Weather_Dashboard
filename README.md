@@ -63,8 +63,6 @@ The following image shows the web application's appearance and functionality:
 
 ![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for a given city.](./Assets/weather_dashboard_screenshot.png)
 
-## Usage
-
 Below is an image of the user interface of the weather dashboard as displayed to the user:
 
 URL to deployed application:
